@@ -149,8 +149,8 @@
     <div class="ui inverted vertical  masthead center aligned segment" style="height: 100%;background: whitesmoke">
 
         <div class="ui  container">
-            <div style="float: left"><img src="images/logo.png"></div>
-            <div class="ui large secondary pointing menu" style="margin-left: 50%">
+            <div style="float: left;"><img src="images/logo.png"></div>
+            <div class="ui large secondary pointing menu" style="margin-left: 50%;font-family: 微软雅黑">
                 <a class="toc item">
                     <i class="sidebar icon"></i>
                 </a>
@@ -164,15 +164,20 @@
             </div>
         </div>
 
-        <div class="ui container" style="width:100%;height:431px;background-image:url('images/bg.jpg');background-size: cover">
-            <h1 id="myh1" class="ui inverted huge header" style="margin-top:0;padding-top: 100px">
+        <div id="mainDiv" class="ui container" style="width:100%;height:663px;background-image:url('images/bg-3.jpg');background-size: auto">
+            <h1 id="myh1" class="ui  huge header" style="margin-top:0;padding-top: 350px;font-family:微软雅黑">
                 上  海  大  潮  电  子  技  术  有  限  公  司
             </h1>
-            <h2>中 航 工 业 无 线 电 电 子 研 究 所</h2>
-            <div class="ui huge primary button">浏览产品<i class="right arrow icon"></i></div>
+            <!--<h2 style="color:black;">秉承航空精神  立足实事求是</h2>
+            <h2>拼搏创新  服务客户  贡献社会</h2>-->
+            <h2 style="font-family: 微软雅黑;color: black">成为国内汽车电子行业卓越企业</h2>
+            <div id="videoBtn" class="ui huge primary button">产品视频<i class="right arrow icon"></i></div>
         </div>
 
-
+       <div id="videoDiv" style="display: none">
+           <video src="video/zhjt.mp4" controls="controls" poster="video/poster.jpg" preload="auto">您的浏览器不支持视频播放。</video>
+           <div id="closeBtn" class="ui small primary button">关闭视频</div>
+       </div>
 
         <div class="ui three column grid" style="margin: 5px">
             <div class="column" >
@@ -224,6 +229,17 @@
 
 </body>
 <script>
+$("#videoBtn").click(function () {
+    $("#mainDiv").hide();
+
+    $("#videoDiv").fadeIn();
+});
+$("#closeBtn").click(function () {
+
+    $("#videoDiv").hide();
+    $("#mainDiv").slideDown();
+
+})
 </script>
 
 </html>
