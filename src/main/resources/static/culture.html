@@ -3,9 +3,9 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<!--
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
--->
+    <!--
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    -->
 
     <title>上海大潮电子技术有限公司</title>
 
@@ -18,9 +18,9 @@
 
 
 
-/*
-        img{ width: 100%; height: auto;max-width: 100%; display: block; }
-*/
+        /*
+                img{ width: 100%; height: auto;max-width: 100%; display: block; }
+        */
 
 
 
@@ -154,8 +154,8 @@
                 <a class="toc item">
                     <i class="sidebar icon"></i>
                 </a>
-                <a class="active item">首&nbsp;&nbsp;&nbsp;&nbsp;页</a>
-                <a class="item" href="companyinfo.html">走进大潮</a>
+                <a class="item" href="index.html">首&nbsp;&nbsp;&nbsp;&nbsp;页</a>
+                <a class="active item" href="companyinfo.html">走进大潮</a>
                 <a class="item" href="products.html">产品介绍</a>
                 <a class="item">公司动态</a>
                 <a class="item">招贤纳士</a>
@@ -164,20 +164,65 @@
             </div>
         </div>
 
-        <div id="mainDiv" class="ui container" style="width:100%;height:663px;background-image:url('images/bg-3.jpg');background-size: auto">
-            <h1 id="myh1" class="ui  huge header" style="margin-top:0;padding-top: 350px;font-family:微软雅黑">
-                上  海  大  潮  电  子  技  术  有  限  公  司
-            </h1>
-            <!--<h2 style="color:black;">秉承航空精神  立足实事求是</h2>
-            <h2>拼搏创新  服务客户  贡献社会</h2>-->
-            <h2 style="font-family: 微软雅黑;color: black">成为国内汽车电子行业卓越企业</h2>
-            <div id="videoBtn" class="ui huge primary button">产品视频<i class="right arrow icon"></i></div>
+        <div id="mainDiv" class="ui container" style="width:100%;height:663px;margin-top: 50px">
+
+            <div class="ui container" >
+
+                <div class="ui grid">
+                    <div class="twelve wide column">
+
+
+                        <h2 class="ui header" style="text-align: left;">愿景</h2>
+
+                        <div class="ui items">
+                            <div class="item">
+                                <div class="image">
+                                    <img src="images/image005.png">
+                                </div>
+                                <div class="content">
+
+                                    <div class="description">
+                                        <p style="text-align: left">秉承航空精神，立足实事求是
+                                        </p>
+                                        <p style="text-align: left">拼搏创新，服务客户，贡献社会</p>
+                                        <p style="text-align: left">成为国内汽车电子行业卓越企业</p>
+                                        <p style="text-align: left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                                        <p style="text-align: left">Adhere to the AVIC spirit,work practically,serve for customers,
+                                            Contribute to society and strive to be the outstanding enterprise in the China’s automotive electronics industry.
+                                        </p>
+                                    </div>
+                                    <div class="extra">
+                                        额外的细节
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="one wide column" style="padding-top: 200px">
+                        <div class="ui vertical divider">
+                            大潮
+                        </div>
+                    </div>
+
+
+                    <div class="two wide column" style="color:black;">
+                        <p class="" style="margin-top: 100px;cursor: pointer"><a href="companyinfo.html">公司简介</a></p>
+                        <p class="" style="cursor: pointer">企业愿景</p>
+                        <p class="" style="cursor: pointer">资质认证</p>
+                        <p class="" style="cursor: pointer">知识产权</p>
+                        <p class="" style="cursor: pointer">领导关怀</p>
+                    </div>
+                </div>
+
+
+
+
+                <p></p>
+            </div>
         </div>
 
-       <div id="videoDiv" style="display: none">
-           <video src="video/zhjt.mp4" controls="controls" poster="video/poster.jpg" preload="auto">您的浏览器不支持视频播放。</video>
-           <div id="closeBtn" class="ui small primary button">关闭视频</div>
-       </div>
+
 
         <div class="ui three column grid" style="margin: 5px">
             <div class="column" >
@@ -210,9 +255,9 @@
         </div>
 
 
-<!--
-        <img src="assets/images/logo.png" class="ui centered mini image">
--->
+        <!--
+                <img src="assets/images/logo.png" class="ui centered mini image">
+        -->
         <div class="ui horizontal small divided link list">
             <a class="item" href="#">网站地图</a>
             <a class="item" href="#">联系我们</a>
@@ -229,17 +274,8 @@
 
 </body>
 <script>
-$("#videoBtn").click(function () {
-    $("#mainDiv").hide();
 
-    $("#videoDiv").fadeIn();
-});
-$("#closeBtn").click(function () {
 
-    $("#videoDiv").hide();
-    $("#mainDiv").slideDown();
-
-})
 </script>
 
 </html>
