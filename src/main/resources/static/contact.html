@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <!--
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    -->
+
+    <title>上海大潮电子技术有限公司</title>
+
+    <link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/semantic-ui/2.2.9/semantic.min.css">
+    <script src="http://cdn.bootcss.com/semantic-ui/2.2.9/semantic.min.js"></script>
+    <style type="text/css">
+
+
+
+
+        /*
+                img{ width: 100%; height: auto;max-width: 100%; display: block; }
+        */
+
+
+
+        .hidden.menu {
+            display: none;
+        }
+
+        .masthead.segment {
+            min-height: 700px;
+            padding: 1em 0em;
+        }
+        .masthead .logo.item img {
+            margin-right: 1em;
+        }
+        .masthead .ui.menu .ui.button {
+            margin-left: 0.5em;
+        }
+        .masthead h1.ui.header {
+            margin-top: 3em;
+            margin-bottom: 0em;
+            font-size: 4em;
+            font-weight: normal;
+        }
+        .masthead h2 {
+            font-size: 1.7em;
+            font-weight: normal;
+        }
+
+        .ui.vertical.stripe {
+            padding: 8em 0em;
+        }
+        .ui.vertical.stripe h3 {
+            font-size: 2em;
+        }
+        .ui.vertical.stripe .button + h3,
+        .ui.vertical.stripe p + h3 {
+            margin-top: 3em;
+        }
+        .ui.vertical.stripe .floated.image {
+            clear: both;
+        }
+        .ui.vertical.stripe p {
+            font-size: 1.33em;
+        }
+        .ui.vertical.stripe .horizontal.divider {
+            margin: 3em 0em;
+        }
+
+        .quote.stripe.segment {
+            padding: 0em;
+        }
+        .quote.stripe.segment .grid .column {
+            padding-top: 5em;
+            padding-bottom: 5em;
+        }
+
+        .footer.segment {
+            padding: 5em 0em;
+        }
+
+        .secondary.pointing.menu .toc.item {
+            display: none;
+        }
+
+        @media only screen and (max-width: 700px) {
+            .ui.fixed.menu {
+                display: none !important;
+            }
+            .secondary.pointing.menu .item,
+            .secondary.pointing.menu .menu {
+                display: none;
+            }
+            .secondary.pointing.menu .toc.item {
+                display: block;
+            }
+            .masthead.segment {
+                min-height: 350px;
+            }
+            .masthead h1.ui.header {
+                font-size: 2em;
+                margin-top: 1.5em;
+            }
+            .masthead h2 {
+                margin-top: 0.5em;
+                font-size: 1.5em;
+            }
+        }
+
+
+    </style>
+
+
+    <script>
+        $(document)
+            .ready(function() {
+
+                // fix menu when passed
+                $('.masthead')
+                    .visibility({
+                        once: false,
+                        onBottomPassed: function() {
+                            $('.fixed.menu').transition('fade in');
+                        },
+                        onBottomPassedReverse: function() {
+                            $('.fixed.menu').transition('fade out');
+                        }
+                    })
+                ;
+
+                // create sidebar and attach to menu open
+                $('.ui.sidebar')
+                    .sidebar('attach events', '.toc.item')
+                ;
+
+
+                $('#myh1').addClass('animated flip');
+
+            })
+        ;
+    </script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+</head>
+<body>
+
+<!-- Page Contents -->
+<div class="pusher">
+    <div class="ui inverted vertical  masthead center aligned segment" style="height: 100%;background: whitesmoke">
+
+        <div class="ui  container">
+            <div style="float: left;"><img src="images/logo.png"></div>
+            <div class="ui large secondary pointing menu" style="margin-left: 50%;font-family: 微软雅黑">
+                <a class="toc item">
+                    <i class="sidebar icon"></i>
+                </a>
+                <a class="item" href="index.html">首&nbsp;&nbsp;&nbsp;&nbsp;页</a>
+                <a class="item" href="companyinfo.html">走进大潮</a>
+                <a class="item" href="bus.html">产品介绍</a>
+                <a class="item">公司动态</a>
+                <a class="item">招贤纳士</a>
+                <a class="active item" href="contact.html">联系我们</a>
+
+            </div>
+        </div>
+
+        <div id="mainDiv" class="ui container" style="width:100%;height:750px;padding-top: 50px;background:#ffffff">
+            <div class="ui container" style="width: 60%">
+
+                <div class="ui grid">
+                    <div class="twelve wide column">
+                        <h3 class="ui header" style="text-align: left;">联系我们</h3>
+
+                        <div class="ui segment" id="ditu" style="height: 600px">
+
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="one wide column" style="padding-top: 200px">
+                        <div class="ui vertical divider">
+                            大潮
+                        </div>
+                    </div>
+                    <div class="two wide column" style="color: black;">
+                       <h4 class="ui header" style="margin-top: 100px;text-align: left;">联系方式</h4>
+                        <div class="ui list">
+                            <div class="item">
+                                <i class="call icon"></i>
+                                <div class="content">
+                                   021-xxxxxxxx
+                                </div>
+                            </div>
+                            <div class="item">
+                                <i class="fax icon"></i>
+                                <div class="content">
+                                   58888888
+                                </div>
+                            </div>
+                            <div class="item">
+                                <i class="mail icon"></i>
+                                <div class="content">
+                                    <a href="mailto:jack@semantic-ui.com">xxx@daochao.com</a>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="ui header" style="text-align: left;">公司地址</h4>
+                        <div class="ui list">
+                            <div class="item">
+                                <i class="map icon"></i>
+                                <div class="content">
+                                   嘉定区安亭镇XX号
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="ui header" style="text-align: left;">乘车路线</h4>
+                        <div class="ui list">
+                            <div class="item">
+                                <i class="bus icon"></i>
+                                <div class="content">
+                                   <p>X号线转X号线</p>
+                                    <p>XX路转XX路</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="ui three column grid" style="margin: 5px">
+            <div class="column" >
+                <div class="ui segment">
+                    最新产品
+                    <div class="column">
+                        <img src="images/vm52.png">
+                        <p>VM52出租车一体式车载终端设备</p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="ui segment">
+                    走进大潮
+                    <div class="column">
+                        <img src="images/logo.jpg">
+                        <p>科学创新，诚信务实</p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="ui segment">
+                    联系我们
+                    <div class="column">
+                        <img src="images/contact.png">
+                        <p>地址：上海市嘉定区安亭镇 电话：021-58888888</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="ui horizontal small divided link list">
+            <a class="item" href="#">网站地图</a>
+            <a class="item" href="#">联系我们</a>
+            <a class="item" href="#">使用条款</a>
+            <a class="item" href="#">隐私条款</a>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+<script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+        addMarker();//向地图中添加marker
+    }
+
+    //创建地图函数：
+    function createMap(){
+        var map = new BMap.Map("ditu");//在百度地图容器中创建一个地图
+        var point = new BMap.Point(121.173847,31.301576);//定义一个中心点坐标
+        map.centerAndZoom(point,15);//设定地图的中心点和坐标并将地图显示在地图容器中
+        window.map = map;//将map变量存储在全局
+    }
+
+    //地图事件设置函数：
+    function setMapEvent(){
+        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+        map.enableKeyboard();//启用键盘上下左右键移动地图
+    }
+
+    //地图控件添加函数：
+    function addMapControl(){
+        //向地图中添加缩放控件
+        var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_SMALL});
+        map.addControl(ctrl_nav);
+        //向地图中添加缩略图控件
+        var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
+        map.addControl(ctrl_ove);
+        //向地图中添加比例尺控件
+        var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+        map.addControl(ctrl_sca);
+    }
+
+    //标注点数组
+    var markerArr = [{title:"上海大潮电子科技有限公司",content:"地址：上海市嘉定区安亭镇",point:"121.173847|31.301576",isOpen:1,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+    ];
+    //创建marker
+    function addMarker(){
+        for(var i=0;i<markerArr.length;i++){
+            var json = markerArr[i];
+            var p0 = json.point.split("|")[0];
+            var p1 = json.point.split("|")[1];
+            var point = new BMap.Point(p0,p1);
+            var iconImg = createIcon(json.icon);
+            var marker = new BMap.Marker(point,{icon:iconImg});
+            var iw = createInfoWindow(i);
+            var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
+            marker.setLabel(label);
+            map.addOverlay(marker);
+            label.setStyle({
+                borderColor:"#808080",
+                color:"#333",
+                cursor:"pointer"
+            });
+
+            (function(){
+                var index = i;
+                var _iw = createInfoWindow(i);
+                var _marker = marker;
+                _marker.addEventListener("click",function(){
+                    this.openInfoWindow(_iw);
+                });
+                _iw.addEventListener("open",function(){
+                    _marker.getLabel().hide();
+                })
+                _iw.addEventListener("close",function(){
+                    _marker.getLabel().show();
+                })
+                label.addEventListener("click",function(){
+                    _marker.openInfoWindow(_iw);
+                })
+                if(!!json.isOpen){
+                    label.hide();
+                    _marker.openInfoWindow(_iw);
+                }
+            })()
+        }
+    }
+    //创建InfoWindow
+    function createInfoWindow(i){
+        var json = markerArr[i];
+        var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
+        return iw;
+    }
+    //创建一个Icon
+    function createIcon(json){
+        var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+        return icon;
+    }
+
+    initMap();//创建和初始化地图
+</script>
+
+</html>
+

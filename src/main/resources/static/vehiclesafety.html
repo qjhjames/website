@@ -10,8 +10,6 @@
     <title>上海大潮电子技术有限公司</title>
 
     <link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/semantic-ui/2.2.9/semantic.min.css">
-    <link rel="stylesheet" type="text/css" href="css/animate.css">
-    <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
     <script src="http://cdn.bootcss.com/semantic-ui/2.2.9/semantic.min.js"></script>
     <style type="text/css">
 
@@ -156,21 +154,67 @@
                 </a>
                 <a class="item" href="index.html">首&nbsp;&nbsp;&nbsp;&nbsp;页</a>
                 <a class="item" href="companyinfo.html">走进大潮</a>
-                <a class="active item" href="products.html">产品介绍</a>
+                <a class="active item" href="bus.html">产品介绍</a>
                 <a class="item">公司动态</a>
                 <a class="item">招贤纳士</a>
-                <a class="item">联系我们</a>
+                <a class="item" href="contact.html">联系我们</a>
 
             </div>
         </div>
 
-        <div id="mainDiv" class="ui container" style="width:100%;height:663px;">
+        <div id="mainDiv" class="ui container" style="width:100%;height:700px;padding-top: 50px;background:#ffffff">
+            <div class="ui container" style="width: 60%">
 
-        </div>
+                <div class="ui grid">
+                    <div class="twelve wide column">
+                        <h3 class="ui header" style="text-align: left;">车辆安全管理系统</h3>
 
-        <div id="videoDiv" style="display: none">
-            <video src="video/zhjt.mp4" controls="controls" poster="video/poster.jpg" preload="auto">您的浏览器不支持视频播放。</video>
-            <div id="closeBtn" class="ui small primary button">关闭视频</div>
+                        <div class="ui segment">
+                            <img class="ui small left rounded  floated image" src="images/product/image116.jpg">
+                            <h4 class="ui header" style="text-align: left;">工程车管理系统介绍</h4>
+                            <p style="text-align: left;line-height: 30px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公司自主研发的工程车GPS车辆远程安全管理系统平台，把工程车辆信息的采集和远程车辆监控管理有机结合，实现了车辆远程实时的监管。
+                                该系统主要由防拆卸智能终端和系统软件构成，以全球卫星定位技术和嵌入式信息综合处理技术为核心，再结合地理信息技术、网络技术、GSM/GPRS通信技术、数据库技术、.NET软件技术等进行开发设计的，综合可靠的工程车安全管理系统。
+                            </p>
+                            <img class="ui small right rounded floated image" src="images/product/IMG_8094.jpg">
+                            <h4 class="ui header" style="text-align: left;">监控终端设备功能</h4>
+                            <p style="text-align: left;line-height: 30px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VM36 系列 GPS/GPRS 车载定位监控调度终端由上海大潮电子技术有限公司最新设计制造。系列本机主要包括主机、天线、电源信号线等组成。该款产品体积小巧、外形美观、技术先进、功能强大。该产品安装使用方便，按客户需求参数配置好直接通电工作即可，方便的实现车辆、船舶等移动目标的远程实时监控。
+                                VM36 车载是继承 TMDT 2135 而来，在原有功能基础上，新增加了对油量表的监控、对行车速
+                                度的监控、对车辆姿态与振动的监控、对 CAN 总线的支持、对 RS232 串口的支持、并预留了功能
+                                扩展连接口。
+                            </p>
+                            <h4 class="ui header" style="text-align: left;">车载设备具体功能</h4>
+                            <p style="text-align: left;line-height: 30px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;电源指示功能；
+                                 具有 4 路工作状态指示功能,，方便用户装配调试设备；
+                                GPS 定位，
+                                 GSM/GPRS 无线数据通信，
+                                 2 路开关量输入，
+                                1 路脉冲输，
+                                 2 路开关量输出，用于现场控制需求；
+                                 1 路模拟量输入，检测现场过程参数；
+                                 设备工作温度检测；
+                                 面板电源指示，行状态指示；
+                                1 路 RS232 接口，需要协议配合；
+                                 1 路 CAN 接口.，需要协议配合；
+                                 加速度计，用于设备状态、振动等检测。
+                            </p>
+                        </div>
+
+                 </div>
+
+                    <div class="one wide column" style="padding-top: 200px">
+                        <div class="ui vertical divider">
+                            大潮
+                        </div>
+                    </div>
+                    <div class="two wide column" style="color: black;">
+                        <p class="" style="margin-top: 100px;cursor: pointer;text-align: left"><a href="bus.html">公交车管理系统</a></p>
+                        <p class="" style="cursor: pointer;text-align: left"><a href="taxi.html">出租车管理系统</a></p>
+                        <p class="" style="cursor: pointer;text-align: left">车辆安全管理系统</p>
+                        <p class="" style="cursor: pointer;text-align: left"><a href="service.html">服务保障</a></p>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
         <div class="ui three column grid" style="margin: 5px">
@@ -223,17 +267,6 @@
 
 </body>
 <script>
-    $("#videoBtn").click(function () {
-        $("#mainDiv").hide();
-
-        $("#videoDiv").fadeIn();
-    });
-    $("#closeBtn").click(function () {
-
-        $("#videoDiv").hide();
-        $("#mainDiv").slideDown();
-
-    })
 </script>
 
 </html>

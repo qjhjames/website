@@ -3,24 +3,22 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<!--
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
--->
+    <!--
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    -->
 
     <title>上海大潮电子技术有限公司</title>
 
     <link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/semantic-ui/2.2.9/semantic.min.css">
-    <link rel="stylesheet" type="text/css" href="css/animate.css">
-    <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
     <script src="http://cdn.bootcss.com/semantic-ui/2.2.9/semantic.min.js"></script>
     <style type="text/css">
 
 
 
 
-/*
-        img{ width: 100%; height: auto;max-width: 100%; display: block; }
-*/
+        /*
+                img{ width: 100%; height: auto;max-width: 100%; display: block; }
+        */
 
 
 
@@ -136,7 +134,7 @@
                 ;
 
 
-                $('#myh1').addClass('animated zoomIn');
+                $('#myh1').addClass('animated flip');
 
             })
         ;
@@ -154,9 +152,9 @@
                 <a class="toc item">
                     <i class="sidebar icon"></i>
                 </a>
-                <a class="active item">首&nbsp;&nbsp;&nbsp;&nbsp;页</a>
+                <a class="item" href="index.html">首&nbsp;&nbsp;&nbsp;&nbsp;页</a>
                 <a class="item" href="companyinfo.html">走进大潮</a>
-                <a class="item" href="bus.html">产品介绍</a>
+                <a class="active item" href="bus.html">产品介绍</a>
                 <a class="item">公司动态</a>
                 <a class="item">招贤纳士</a>
                 <a class="item" href="contact.html">联系我们</a>
@@ -164,61 +162,89 @@
             </div>
         </div>
 
-        <div id="mainDiv" class="ui container" style="width:100%;height:663px;background-image:url('images/bg-3.jpg');background-size: auto">
-            <h1 id="myh1" class="ui  huge header" style="margin-top:0;padding-top: 350px;font-family:微软雅黑">
-                上  海  大  潮  电  子  技  术  有  限  公  司
-            </h1>
-            <!--<h2 style="color:black;">秉承航空精神  立足实事求是</h2>
-            <h2>拼搏创新  服务客户  贡献社会</h2>-->
-            <h2 style="font-family: 微软雅黑;color: black">成为国内汽车电子行业卓越企业</h2>
-            <div id="videoBtn" class="ui huge primary button">产品视频<i class="right arrow icon"></i></div>
-        </div>
+        <div id="mainDiv" class="ui container" style="width:100%;height:700px;padding-top: 50px;background:#ffffff">
+            <div class="ui container" style="width: 60%">
 
-       <div id="videoDiv" class="ui container" style="display: none">
-           <video src="video/zhjt.mp4" controls="controls" width="80%" poster="video/poster.jpg" preload="auto">您的浏览器不支持视频播放。</video>
-           <div id="closeBtn" class="ui small primary button">关闭视频</div>
-       </div>
+                <div class="ui grid">
+                    <div class="twelve wide column">
+                        <h3 class="ui header" style="text-align: left;">服务保障</h3>
+
+                        <div class="ui segment">
+                            <img class="ui small left rounded  floated image" src="images/product/image175.jpg">
+                            <h4 class="ui header" style="text-align: left;">专业的服务团队</h4>
+                            <p style="text-align: left;line-height: 30px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;已经为包括上海、苏州、邯郸、烟台等地市6000多辆公交车、商用客车，10000多辆出租车的提供了5年多的服务工作，
+                                能提供固定服务点和专业化的本地服务团队，提供专业优质的服务。
+                            </p>
+
+                            <h4 class="ui header" style="text-align: left;">严格的服务制度</h4>
+                            <p style="text-align: left;line-height: 30px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;建立1对1大客户经理服务制度，保障每个大客户都有专人服务，
+                                 首问负责制，保障客户的每一个需求都能得到及时回应。
+                            </p>
+
+                            <h4 class="ui header" style="text-align: left;">完善的服务流程</h4>
+                            <p style="text-align: left;line-height: 30px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  提供方便快捷“一点受理、全程服务”的一站式服务和统一客服热线保障大客户服务，
+                                分级维护体系保障网络安全可靠运行、绿色通道保障客户故障最短时间修复。
+                            </p>
+
+
+
+
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="one wide column" style="padding-top: 200px">
+                        <div class="ui vertical divider">
+                            大潮
+                        </div>
+                    </div>
+                    <div class="two wide column" style="color: black;">
+                        <p class="" style="margin-top: 100px;cursor: pointer;text-align: left"><a href="bus.html">公交车管理系统</a></p>
+                        <p class="" style="cursor: pointer;text-align: left"><a href="taxi.html">出租车管理系统</a></p>
+                        <p class="" style="cursor: pointer;text-align: left"><a href="vehiclesafety.html">车辆安全管理系统</a></p>
+                        <p class="" style="cursor: pointer;text-align: left">服务保障</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
 
         <div class="ui three column grid" style="margin: 5px">
             <div class="column" >
                 <div class="ui segment">
-                    <h4 class="ui header">最新产品</h4>
+                    最新产品
                     <div class="column">
-                        <a href="bus.html" class="ui medium image">
-                        <img class="ui centered rounded image" src="images/image250.png">
-                        </a>
-                        <p style="margin-top: 5px">智慧公交</p>
+                        <img src="images/vm52.png">
+                        <p>VM52出租车一体式车载终端设备</p>
                     </div>
                 </div>
             </div>
             <div class="column">
                 <div class="ui segment">
-                    <h4 class="ui header"> 走进大潮</h4>
+                    走进大潮
                     <div class="column">
-                        <a href="companyinfo.html" class="ui medium image">
-                        <img class="ui centered rounded image" src="images/logo.jpg">
-                        </a>
-                        <p style="margin-top: 5px">科学创新，诚信务实</p>
+                        <img src="images/logo.jpg">
+                        <p>科学创新，诚信务实</p>
                     </div>
                 </div>
             </div>
             <div class="column">
                 <div class="ui segment">
-                    <h4 class="ui header">  联系我们</h4>
+                    联系我们
                     <div class="column">
-                        <a href="http://google.com" class="ui medium image">
-                        <img class="ui centered rounded image" src="images/contact.png">
-                        </a>
-                        <p style="margin-top: 5px">地址：上海市嘉定区安亭镇 电话：021-58888888</p>
+                        <img src="images/contact.png">
+                        <p>地址：上海市嘉定区安亭镇 电话：021-58888888</p>
                     </div>
                 </div>
             </div>
         </div>
 
 
-<!--
-        <img src="assets/images/logo.png" class="ui centered mini image">
--->
+        <!--
+                <img src="assets/images/logo.png" class="ui centered mini image">
+        -->
         <div class="ui horizontal small divided link list">
             <a class="item" href="#">网站地图</a>
             <a class="item" href="#">联系我们</a>
@@ -235,17 +261,6 @@
 
 </body>
 <script>
-$("#videoBtn").click(function () {
-    $("#mainDiv").hide();
-
-    $("#videoDiv").fadeIn();
-});
-$("#closeBtn").click(function () {
-
-    $("#videoDiv").hide();
-    $("#mainDiv").slideDown();
-
-})
 </script>
 
 </html>
